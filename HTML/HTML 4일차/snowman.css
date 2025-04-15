@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 전체 화면 채우기 */
+    flex-direction: column;
+    background-color: #cfe7ff; /* 하늘색 배경 */
+    margin: 0;
+}
+
+.hat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 230px; /* 혹은 적절한 위치 */
+    left: calc(50% - 50px); /* 중앙 정렬 */
+    transform: rotate(11deg);
+    z-index: 3;
+}
+
+.hat1 {
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px 10px 0 0;
+}
+
+.hat2 {
+    background-color: black;
+    width: 130px;
+    height: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px;
+}
+
+.face {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.eye1, .eye2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    top: 30px;
+}
+
+.eye1 {
+    left: 20px;
+}
+.eye2 {
+    right: 20px;
+}
+
+
+.mouth {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    width: 30px;
+    height: 13px;
+    background-color: orange;
+    border-radius: 0 0 0 10px;
+}
+
+.arm {
+    position: absolute;
+    top: 400px; /* 눈사람 중간 위치로 올리기 */
+    left: calc(50% - 125px);
+    width: 250px;
+}
+
+.arm1, .arm2 {
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #6b4f3b;
+    top: 0;
+}
+
+.arm1 {
+    left: 0;
+    transform: rotate(30deg);
+}
+
+.arm2 {
+    right: 0;
+    transform: rotate(-30deg);
+}
+
+.snow1, .snow2, .snow3 {
+    background-color: white;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.snow1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.snow2 {
+    width: 140px;
+    height: 140px;
+    margin-top: -20px;
+}
+
+.snow3 {
+    width: 180px;
+    height: 180px;
+    margin-top: -30px;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 8px 0;
+}
