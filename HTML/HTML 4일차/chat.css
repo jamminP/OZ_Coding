@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    height: 100%;
+    background-color: #ffcc1f;
+}
+
+/*스크린 크기 조정*/
+.chat-screen{
+    height: calc(100% - 120px);
+}
+
+/* 유저 정보 추가되는 부분*/
+.user{
+    background-color: #ffffff;
+    padding: 16px;
+    height: 80px;
+}
+
+.user_pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #fcc41f;
+}
+
+.user_column{
+    float: left;
+}
+
+.user_nick{
+    font-size: 20px;
+}
+
+.user_count{
+    color: gray;
+    font-size: 10px;
+}

@@ -1,0 +1,79 @@
+<!-- 
+- **헤더**
+    - `header` 요소를 사용하여 페이지의 상단 영역을 정의합니다.
+    - `#in_header` 요소 내부에 로고와 네비게이션 메뉴를 포함합니다.
+    - 로고는 `#logo` 요소에 위치하고, 네비게이션 메뉴는 `#gnb` 요소에 위치합니다.
+- **섹션 1**
+    - `section` 요소를 사용하여 첫 번째 콘텐츠 영역을 정의합니다.
+    - `#section_1`은 전체 너비와 고정된 높이를 가지며, 배경색은 `papayawhip`입니다.
+- **섹션 2**
+    - `section` 요소를 사용하여 두 번째 콘텐츠 영역을 정의합니다.
+    - `#section_2`에는 원형 요소들이 포함된 `container` 요소가 있습니다.
+    - `.circle` 클래스가 적용된 원형 요소들을 포함합니다.
+- **섹션 3**
+    - `section` 요소를 사용하여 세 번째 콘텐츠 영역을 정의합니다.
+    - `.con_wrap` 클래스가 적용된 여러 개의 리스트 요소를 포함합니다.
+    - `.long_box`와 `.m_box` 클래스를 사용하여 특정 스타일의 박스를 정의합니다.
+- **상단 버튼**
+    - `#top_btn` 요소를 사용하여 페이지 상단으로 이동할 수 있는 버튼을 정의합니다.
+    - 버튼은 고정 위치로 화면의 오른쪽 하단에 위치합니다.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>레이아웃</title>
+     <link rel="stylesheet" href="./layout.css">
+ </head>
+ <body>
+ 
+     <!-- 헤더 영역 -->
+     <header id="in_header">
+         <div id="logo">LOGO</div>
+         <nav id="gnb">
+             <a href="#section_1" class="nav1">메뉴1</a>
+             <a href="#section_2" class="nav1">메뉴2</a>
+             <a href="#section_3" class="nav1">메뉴3</a>
+         </nav>
+     </header>
+ 
+     <!-- 섹션 1 -->
+     <section id="section_1">
+         <h2>Section 1</h2>
+     </section>
+ 
+     <!-- 섹션 2 -->
+     <section id="section_2">
+         <div class="container">
+             <div class="circle"></div>
+             <div class="circle"></div>
+             <div class="circle"></div>
+         </div>
+     </section>
+ 
+     <!-- 섹션 3 -->
+     <section id="section_3">
+         <ul class="con_wrap">
+             <li class="long_box"></li>
+             <li class="m_box"></li>
+             <li class="m_box"></li>
+         </ul>
+         <ul class="con_wrap">
+            <li class="m_box"></li>
+            <li class="long_box"></li>
+            <li class="m_box"></li>
+        </ul><ul class="con_wrap">
+            <li class="m_box"></li>
+            <li class="m_box"></li>
+            <li class="long_box"></li>
+        </ul>
+     </section>
+ 
+     <!-- 상단 이동 버튼 -->
+     <div id="top_btn">
+         <a href="#">TOP</a>
+     </div>
+ 
+ </body>
+ </html>
