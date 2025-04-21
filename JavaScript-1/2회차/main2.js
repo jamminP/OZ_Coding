@@ -71,8 +71,9 @@ const diceArt = [
   let diceNumber = randomNumber();
 
   console.log(diceArt[diceNumber]);
-  
 
+  // 함수에 바로 넣는 방법
+  //console.log(diceArt[parseInt(Math.random()*6)+1]);
 
 
   function randomNumber(){
@@ -82,3 +83,8 @@ const diceArt = [
 
     return dice;
   }
+
+  /*
+
+  */
+
